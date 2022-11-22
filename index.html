@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+        
+        .container{
+            display: flex;
+            width: 900px;
+            height: 450px;
+            margin: 150px;
+            border: 1px solid;
+            flex-direction: row;
+            position: relative;
+            flex-wrap: wrap;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+        }
+        .first{
+background-color: rgb(252, 154, 8);
+width: 300px;
+height: 450px;
 
+
+        }
+        
+        .second{
+            background-color: rgb(12, 59, 90);
+width: 300px;
+height: 450px;
+        }
+        .third{
+            background-color: rgb(1, 39, 17);
+width: 300px;
+height: 450px;
+        }
+        .logo{
+            margin-top: 35px;
+            margin-left: 45px;
+            
+        }
+        h2{
+            position: absolute;
+            margin-top: 35px;
+            color: white;
+            margin-left: 45px;
+        }
+        .para{
+            position: absolute;
+            margin-top: 85px;
+            margin-left: 45px;
+            
+        }
+        .last{
+            position: absolute;
+            margin-top: 250px;
+            margin-left: 45px;
+            background-color: wheat;
+            width: 150px;
+            height: 50px;
+            border-radius: 26px;
+        }
+        #p1{
+            color: rgb(235, 173, 60);
+        }
+        #p2{
+            color: rgb(25, 143, 108);
+        }
+        #p3{
+            color: rgb(43, 104, 48);
+            
+        }
+        #l1:active{
+           background-color:rgb(235, 173, 60);
+           /* color: white; */
+           border: 2px solid white;
+           
+
+ }
+ #l2:active{
+background-color: rgb(25, 143, 108) ;
+/* color: white; */
+           border: 2px solid white;
+}
+#l3:active{
+background-color:  rgb(43, 104, 48);
+/* color: white; */
+           border: 2px solid white;
+}
+#p1:active{
+           
+           color: white;
+}
+ #p2:active{
+color: white;
+           
+}
+#p3:active{
+color: white;
+        
+}
+
+@media (max-width:600px) {
+    .first{
+        width: 900px;
+height: 500px;
+/* margin-left: 20px; */
+font-size: 22px;
+    }
+    .last{
+        width: 250px;
+        height: 60px;
+    }
+    .second{
+        width: 900px;
+height: 500px;
+/* margin-left: 20px; */
+font-size: 22px;
+    }
+    .third{
+        width: 900px;
+height: 500px;
+/* margin-left: 20px; */
+font-size: 22px;
+    }
+}
+        
+    </style>
+</head>
+<body>
+    <div class="container" style="border-radius: 5px;">
+        <div class="first">
+<img src="image/icon-sedans.svg" alt="logo" class="logo"></img>
+<h2>SEDANS</h2>
+<p class="para" style="color: rgb(240, 200, 128);">Choose a sedan for its<br>affordability and excellent<br> fuel economy. Ideal for<br>crusing in the city or on<br> your next road trip.</p>
+<div class="last" id="l1"><p id="p1"  style="text-align: center ">Learn More</p></div>        
+</div>
+        <div class="second">
+            <img src="image/icon-suvs.svg" alt="logo" class="logo"></img>
+            <h2>SUVS</h2>
+            <p class="para" style="color: rgb(25, 143, 108);">Take an SUV for its spacious<br>interior,power,and<br>versatility.Perfect for your<br>next family vacation and<br>off-road adventures</p>
+            <div class="last" id="l2"><p id="p2" style="text-align: center">Learn More</p></div>        
+        </div>
+        <div class="third">
+            <img src="image/icon-luxury.svg" alt="logo" class="logo"></img>
+            <h2>LUXUARY</h2>
+            <p class="para" style="color: rgb(43, 104, 48);">Cruise in the best car brands<br>without the bloated prices.<br>Enjoy the enchanced comfort<br> of a luxury rental and arrive<br> in style.</p>
+            <div class="last" id="l3"><p  id="p3" style="text-align: center ">Learn More</p></div>        
+        </div>
+    </div>
+</body>
+</html>
